@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajmeer - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="logo">Ajmeer</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <img src="images/dp.jpeg" alt="Profile Photo" class="hero-avatar" loading="lazy">
+          <div class="hero-text">
+            <h1 class="hero-heading">Ajmeer</h1>
+            <p class="hero-subheading">Full Stack Developer</p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-content">
+          <p class="about-text">
+            Passionate full stack developer with expertise in modern web technologies. I love building responsive, performant, and accessible web applications that solve real-world problems.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Tech Stack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3 class="project-title">TaskFlow</h3>
+            <p class="project-description">A collaborative task management platform built with real-time synchronization and intuitive task tracking.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Socket.io</span>
+            </div>
+            <a href="#" class="project-link">View Project</a>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-name">Portfolio Studio</h3>
+            <p class="project-description">A modern portfolio website generator with customizable themes, dark mode, and responsive design.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <a href="#" class="project-link">View Project</a>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-card">E-Commerce Dashboard</h3>
+            <p class="project-description">Admin dashboard for an e-commerce platform with analytics, order management, and user analytics.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">D3.js</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <a href="#" class="project-link">View Project</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">React</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Node.js</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">CSS & Styling</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">SQL</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Git</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contact</h2>
+        </div>
+        <div class="contact-content">
+          <p class="contact-text">
+            I'm currently open to new opportunities. Let's connect and discuss how we can create something amazing together.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <a href="mailto:ajmeer@example.com" class="contact-link">ajmeer@example.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/ajmeer" target="_blank" rel="noopener" class="contact-link">github.com/ajmeer</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://linkedin.com/in/ajmeer" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/ajmeer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="footer-text">© 2024 Ajmeer. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/ajmeer" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.94 0 0 5.94 0 12c0 5.25 2.34 9.76 6.25 13.98L12 23l7.75-2.22C17.66 22.74 20 18.24 20 12C20 5.94 14.06 0 12 0zM12 2.09C7.01 2.09 2.09 7.01 2.09 12s4.92 9.91 11.91 11.91 9.91-4.92 11.91-11.91S16.99 2.09 12 2.09zm5.47 10.33-3.56 2.32-1.8-3.55 2.26-1.86-3.55-2.31 1.8-3.56 2.32 3.55-2.26 1.86 3.55 2.31-3.56 2.31-1.8 3.56-2.32-3.55-2.31 1.8-3.55-2.32z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/ajmeer" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 6.018l-8.58 8.58C11.117 15.045 7.134 16 3 16S0 10.92 0 6.947 7.134 0 13 0s13 6.947 13 13.98l-8.58 8.58 7.742 7.738 1.526-1.526-7.742 7.738C20.764 21.5 24 17.48 24 13S20.764 4.5 16.98 2.018zM12 4.018c-3.309 0-6.018 2.709-6.018 6.018 0 3.309 2.709 6.018 6.018 6.018s6.018-2.709 6.018-6.018c0-3.309-2.709-6.018-6.018-6.018z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
